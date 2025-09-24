@@ -7,6 +7,7 @@ UPDATE mobiles SET stock =stock+5,price = 12500 WHERE model ='Narzo 50';
 DELETE FROM mobiles WHERE id=2;
 
 SELECT MIN(price) AS lowest, MAX(price) as highest FROM mobiles; 
+SELECT model , price FROM mobiles WHERE price=( SELECT MIN(price) FROM mobiles) OR price=(SELECT MAX(price) FROM mobiles); 
 
 SELECT SUM(stock) as total_stock FROM mobiles; 
 

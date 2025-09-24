@@ -12,3 +12,5 @@ DELETE FROM books WHERE title='Ikigai';
 
 SELECT AVG(price) AS AVG_PRICE, COUNT(*) AS TOTAL FROM books; 
 
+SELECT * FROM books ORDER BY price DESC LIMIT 3; 
+

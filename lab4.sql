@@ -10,3 +10,5 @@ SELECT title AS Movie_Title,genre AS Category FROM movies;
 
 SELECT title,rating AS IMDb_Score FROM movies WHERE  genre IN('Sci-Fi', 'Action' )SELECT title, release_year AS released FROM movies WHERE release_year BETWEEN 2008 AND 2015; 
 
+SELECT COUNT(title) AS High_Rated_Movies FROM movies WHERE rating > 8.5; 
+
